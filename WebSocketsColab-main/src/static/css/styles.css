@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+    background: #f5f5f5;
+}
+.user-info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.logout-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.logout-link:hover {
+    text-decoration: underline;
+}
+
+.app-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-header {
+    background: #AC3834;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 2fr 0.7fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.chat-panel,
+.users-panel {
+    background: #CAB7A1;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px #811112;
+}
+
+.messages {
+    border: 1px solid #881D1D;
+    border-radius: 6px;
+    padding: 0.5rem;
+    height: 400px;
+    overflow-y: auto;
+    background: #fafafa;
+    margin-bottom: 0.8rem;
+}
+
+.message {
+    margin-bottom: 0.5rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+
+.message.me {
+    background: #AC3834;
+    border-color: #881D1D;
+}
+
+.message.system {
+    background: #B29576;
+    border-color: #811112;
+    font-style: italic;
+    text-align: center;
+}
+
+.message-header {
+    font-size: 0.8rem;
+    color: #AC3834;
+    margin-bottom: 0.2rem;
+}
+
+.message-body {
+    font-size: 0.95rem;
+}
+
+.message-form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.message-form input {
+    flex: 1;
+    padding: 0.5rem 0.6rem;
+    border-radius: 4px;
+    border: 1px solid #AC3834;
+    font-size: 0.95rem;
+}
+
+.message-form button {
+    padding: 0.5rem 0.9rem;
+    border-radius: 4px;
+    border: none;
+    background: #811112;
+    color: #CAB7A1;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.message-form button:hover {
+    background: #AC3834;
+}
+
+.users-panel h2 {
+    margin-top: 0;
+}
+
+#users-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#users-list li {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+}

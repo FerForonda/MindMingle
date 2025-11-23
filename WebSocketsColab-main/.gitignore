@@ -1,0 +1,78 @@
+# ============================
+# Python general
+# ============================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.log
+
+# ============================
+# Entornos virtuales
+# ============================
+venv/
+.env/
+.venv/
+env/
+ENV/
+*.python-version
+
+# ============================
+# Flask / Web project
+# ============================
+instance/
+*.sqlite3
+*.db
+
+# Archivos de configuración sensibles
+*.pem
+*.key
+*.crt
+
+# Evitar publicar credenciales OAuth
+client_secret.json
+credentials.json
+google_credentials.json
+
+# ============================
+# Sistema operativo
+# ============================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# ============================
+# IDE editors
+# ============================
+# VSCode
+.vscode/
+.settings/
+
+# PyCharm
+.idea/
+*.iml
+
+# ============================
+# Node/Web (por si llegas a usar)
+# ============================
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# ============================
+# Build / Deploy
+# ============================
+dist/
+build/
+*.egg-info/
