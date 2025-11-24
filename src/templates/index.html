@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <title>Chat colaborativo en tiempo real</title>
+    <title>Chat colaborativo</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
@@ -10,7 +10,7 @@
         <header class="app-header">
             <h1>Mind Mingle</h1>
             <div class="user-info">
-                <span id="current-username">Usuario: {{ username }}</span>
+                <span id="current-username">Usuario {{ username }}</span>
                 <a href="{{ url_for('auth.logout') }}" class="logout-link">Salir</a>
             </div>
         </header>
@@ -31,7 +31,7 @@
             </section>
 
             <aside class="users-panel">
-                <h2>Conectado:</h2>
+                <h2>Usuarios</h2>
                 <ul id="users-list"></ul>
             </aside>
         </main>
